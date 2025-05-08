@@ -1,6 +1,6 @@
 <?php
 $apiUrl = "https://www.zasilkovna.cz/api/rest";
-$apiPassword = '92283e7127768ce43d8acfa5ba4d1b29';
+$apiPassword = $packotaPassword;
 
 $packetData = [
     'number' => '123456',

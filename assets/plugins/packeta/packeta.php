@@ -1,7 +1,7 @@
 <script src="https://widget.packeta.com/v6/www/js/library.js"></script>
 
 <script>
-    const packetaApiKey = '92283e7127768ce4';
+    const packetaApiKey = $packetaApi;
 
     const packetaOptions = {
         country: "cz",
