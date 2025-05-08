@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--primary-color);
+    bottom: 0;
+    position: relative;
+    padding: 20px;
+    gap: 10px;
+}
+

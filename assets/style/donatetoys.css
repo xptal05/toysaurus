@@ -1,0 +1,6 @@
+.icon{
+    fill: var(--primary-color);
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+}

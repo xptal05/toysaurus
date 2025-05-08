@@ -1,0 +1,37 @@
+{
+    "order_status": [
+      "New Order",
+      "Pending Payment",
+      "On Hold",
+      "Processing",
+      "Paid",
+      "Failed",
+      "Draft",
+      "Cancelled",
+      "Refunded"
+    ],
+    "toy_status": [
+      "Available",
+      "Ordered",
+      "Prepared",
+      "Shipped To",
+      "Borrowed",
+      "Shipped Back",
+      "Returned",
+      "In Maintenance",
+      "In Washing",
+      "Lost",
+      "Retired"
+    ],
+    "subscription_status": [
+      "Active",
+      "Expired",
+      "Cancelled"
+    ],
+    "payment_status": [
+      "Processing",
+      "Succeeded",
+      "Failed"
+    ]
+  }
+  

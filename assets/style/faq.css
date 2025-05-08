@@ -1,0 +1,28 @@
+.accordeon .accordeon-text {
+    display: none;
+    padding: 1rem;
+    transition: max-height 0.3s ease;
+    border: 0.5px solid grey;
+  }
+  
+  .accordeon .accordion-item:first-child .accordeon-text {
+    display: block;
+  }
+  
+  .accordeon .accordeon-title {
+    display: block;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--grey0-color);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 0.5px solid grey;
+  }
+  
+  .accordeon .accordeon-title:hover {
+    background-color: var(--secondary-color);
+    color: var(--grey80-color);
+  }
+  

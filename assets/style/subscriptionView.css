@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+.subscriptions-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    height: 600px;
+}
+
+.subscription-container {
+    padding: 30px;
+    border: 1px solid rgba(9, 9, 9, .1);
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
+}
+
+.subscriptions-container>div:nth-of-type(2) {
+    height: 100%;
+}
+
+.subscription-container>div {
+    position: relative;
+}
+
+
+.subscription-container>div:not(:first-child):not(:last-child):after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    z-index: 1;
+    background: rgba(9, 9, 9, .1);
+}
+
+.subscription-container:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+}
+
+.subscription-container>.container-header {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 10px;
+    color: teal;
+}
+
+.subscription-container>.subscription-price-section {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.subscription-container>.subscription-price-section>.period {
+    color: grey;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.subscription-container>.subscription-description-section {
+    padding: 10px;
+}
+
+.subscription-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.subscription-container ul li {
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.subscription-container ul li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    z-index: 1;
+    background: rgba(9, 9, 9, .1);
+}
+
+
+.subscription-container li::before {
+    content: "✔";
+    color: teal;
+    margin-right: 8px;
+}
+
+.subscription-container > .container-badge {
+    background-color: teal;
+    position: absolute;
+    color: #fff;
+    top: 30px;
+    right: -55px;
+    z-index: 10;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+    width: 200px;
+    padding: 7px 0;
+    white-space: nowrap;
+}

@@ -1,0 +1,109 @@
+.checkout-container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.checkout-container>div {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.form_fields_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-review-order {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-review-order-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 equal columns */
+    gap: 10px 15px;
+    /* Space between items */
+    align-items: center;
+}
+
+.cart_item {
+    gap: 20px;
+    width: 100%;
+    display: contents; /* Allows grid items to inherit parent grid */
+
+}
+
+.cart_item .product-thumb img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: var(--border-radius-large);
+}
+
+.product-name,
+.product-price,
+.product-deposit {
+    text-align: center;
+    /* Center content */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 4 equal columns */
+    gap: 10px 15px;
+    /* Space between items */
+    text-align: right;
+}
+
+.cart-container H3 {
+    text-align: left;
+}
+
+.cart-container.final-total {
+    grid-template-columns: repeat(2, 1fr);
+    /* 4 equal columns */
+}
+
+.payment_box {
+    display: none;
+}
+
+#payment-form {
+    position: absolute;
+    top: 20vh;
+    /* 20% from the top */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Adjust back by half its width */
+    width: 420px;
+    min-height: 600px;
+    border-radius: var(--border-radius-large);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    /* Initially hidden */
+}
+
+/* Responsive: Adjust for smaller screens */
+@media (max-width: 500px) {
+    #payment-form {
+        width: 90vw;
+        /* Use 90% of the viewport width */
+        min-height: 500px;
+        top: 10vh;
+        /* Adjust top spacing */
+    }
+}

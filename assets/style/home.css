@@ -1,0 +1,111 @@
+.hero-section{
+    display: flex;
+    height: calc(100vh - 60px - 2vw);
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-section-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.hero-section-text>H1{
+    font-size: 2rem;
+}
+.main-heading{
+    font-size: 3rem;
+}
+
+.hero-section-img{
+    background-image: url("../../public/src/img/background.jpg");
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    object-fit:fill;
+    filter: sepia(1) saturate(4) hue-rotate(-47deg) brightness(1);
+    opacity: 0.6;
+
+}
+
+.who-we-are{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.flip-cards-wrapper{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flip-card{
+    border-radius: var(--border-radius-large);
+    border: var(--primary-color) solid 2px;
+    min-width: 150px;
+    max-width: 300px;
+    width: 30vw;
+    height: 250px;
+    perspective: 1000px; /* Depth effect */
+    background-color: transparent;
+    overflow: hidden;
+}
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+  }
+  .flip-card-front{
+
+    background-color: var(--secondary-background-color);
+    flex-direction: column;
+
+  }
+  
+  
+  .flip-card-back {
+    background-color: var(--primary-color);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+  
+  .toy-slider-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+
+
+  .icon{
+    height: 2rem;
+  }
